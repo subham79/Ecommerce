@@ -1,0 +1,13 @@
+<div class="container">
+    <img [src]="shop.imageUrl" alt="">
+    <div class="details">
+        <div class="header">
+            <div class="name">
+                {{shop?.name}}
+            </div>
+        </div>
+        <div class="add-btn">
+            <button (click)="addtoCart()">Add To Cart</button>
+        </div>
+    </div>
+</div>

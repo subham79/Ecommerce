@@ -1,0 +1,43 @@
+header{
+    background-color: white;
+    padding: 0;
+    border-bottom:  1px solid red;
+}
+a{
+    color: rgb(235, 77, 77);
+}
+a:hover{
+    background-color: rgb(230, 134, 134);
+    color: white;
+}
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+a.logo{
+    font-family: bold;
+    padding: 1em;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+
+}
+nav ul li a{
+    padding: 1em;
+    display: inline-block;
+}
+.value{
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    padding: 3px;
+    background: rgb(241, 224, 224);
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    margin-left: 0.1rem;
+    font-size: 10px;
+}

@@ -1,0 +1,24 @@
+.container{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: flex-start !important;
+    margin: 1.5rem !important;
+    justify-content: space-between;
+}
+img{
+    height: 10rem;
+    width: 10rem;
+}
+li{
+    list-style:  none;
+}
+.shop-details{
+
+
+}
+.bill{
+    text-align: center;
+    height: 15rem;
+    width: 15rem;
+    border: 1px solid gray;
+}

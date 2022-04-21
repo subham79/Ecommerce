@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="shop-details">
+        <ul>
+            <li *ngFor="let data of products">
+                <img [src]="data.imageUrl" alt="data.shop.name">
+                <div>
+                    <a>
+
+                    </a>
+                </div>
+                <div>
+                    <select #qyantitySelect (change)="changeQyantity(data, qyantitySelect.value)">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div *ngIf="dataTrue">
+                    {{data.price}}
+                </div>
+                <div *ngIf="!dataTrue">
+                    {{priceChange}}
+                </div>
+                <button (click)="removeItem(data)">Remove</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bill">
+        bill
+        {{grandTotal}}
+    </div>
+</div>

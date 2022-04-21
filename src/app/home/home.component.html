@@ -1,0 +1,28 @@
+<app-search></app-search>
+<ul>
+    <li *ngFor="let data of shopping">
+        <a routerLink="/shop/{{data.id}}">
+            <img src="{{data.imageUrl}}" alt="">
+        </a>
+        <div class="content" style="margin: 1rem;">
+            <div class="name" style="padding-bottom: 0.3rem;">{{data.name}} </div>
+            <!-- <span class="favorite {{data.favorite? '': 'not'" }}>
+                2
+            </span> -->
+            <div style="display: flex; gap: 1rem;">
+                <div class="d-price">
+                    ₹{{data.price}}
+                </div>
+                <div class="amount">{{data.discount_price}}</div>
+                <div class="price">{{data.discount}} off
+                </div>
+            </div>
+
+
+            <div style="justify-content: center; text-align: center; margin-top: 0.5rem;">
+                <button (click)="addtocart(data)" class="add-button">Add to Cart</button>
+            </div>
+        </div>
+
+    </li>
+</ul>
